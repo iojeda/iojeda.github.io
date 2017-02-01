@@ -3,7 +3,9 @@
 First of all you need the following
 
 ```markdown
+
 - Linux Compatible Smart Card reader
+
 ```
 
 You can use the [editor on GitHub](https://github.com/iojeda/iojeda.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
