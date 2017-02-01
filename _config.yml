@@ -1,3 +1,4 @@
-theme: jekyll-theme-architect
+theme: leap-day
+#jekyll-theme-architect
 # File: _config.yml
 title: Adventures of a Sysadmin
