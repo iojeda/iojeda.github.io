@@ -8,14 +8,14 @@ Requisitos previos
 
 ### 1. Elección del Lector de tarjetas
 
-Hay multiples opciones en este punto, yo os voy a indicar que lector tengo pero cualquier otro con soporte linux os sirve.
-Tan solo teneis que aseguraros, al leer los datos del embalaje se indica claramente, que entre los sistemas operativos soportados se encuentra linux.
+Hay multiples opciones en este punto, yo os voy a indicar que lector tengo pero cualquier otro con soporte Linux os sirve.
+Tan solo teneis que aseguraros, al leer los datos del embalaje se indica claramente, que entre los sistemas operativos soportados se encuentra Linux.
 
 Mi lector: [Woxter-lector-dnie](http://woxter.es/esp/es/perifericos-pc-/79-woxter-lector-dni-electrnico-8435089008814.html#)
 
 Precio: 11,99€
 
-Esta basado en el siguiente controlador del fabricante Alcor [Alcor AU9540](http://www.alcormicro.com/en_content/c_product/product_01b.php?CategoryID=4&IndexID=4) (esto me lo chivó linux)
+Esta basado en el siguiente controlador del fabricante Alcor [Alcor AU9540](http://www.alcormicro.com/en_content/c_product/product_01b.php?CategoryID=4&IndexID=4) (esto me lo chivó Linux :smile:)
 
 ```markdown
 
@@ -32,6 +32,12 @@ Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 $
 
 ```
+
+### 2. Dni-e en vigor y con certificados actualizados
+
+Ademas de comprobar que el Dni-e no este caducado aqui tenemos que tener en cuenta alguna cosilla mas.
+Recordar la clave que indicamos en la creación del Dni-e para validar las gestiones realizadas con el mismo (si, yo tampoco me acordaba :smile:)
+Comprobar que los certificados instalados en el chip de la tarjeta estan al día.
 
 ```markdown
 $ sudo pacman -S opensc
