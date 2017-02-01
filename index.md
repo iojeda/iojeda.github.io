@@ -15,10 +15,13 @@ Hay multiples opciones en este punto, yo os voy a indicar que lector tengo pero 
 Tan solo teneis que aseguraros, al leer los datos del embalaje se indica claramente, que entre los sistemas operativos soportados se encuentra linux.
 
 Mi lector: [Woxter-lector-dnie](http://woxter.es/esp/es/perifericos-pc-/79-woxter-lector-dni-electrnico-8435089008814.html#)
+
 Precio: 11,99€
+
 Esta basado en el siguiente controlador del fabricante alcor [Alcor AU9540](http://www.alcormicro.com/en_content/c_product/product_01b.php?CategoryID=4&IndexID=4) (esto me lo chivó linux)
 
 ```markdown
+
 $ lsusb
 Bus 002 Device 002: ID 8087:8000 Intel Corp. 
 Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
@@ -30,6 +33,7 @@ Bus 003 Device 005: ID 058f:9540 Alcor Micro Corp. AU9540 Smartcard Reader
 Bus 003 Device 002: ID 046d:c326 Logitech, Inc. 
 Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 $
+
 ```
 
 ```markdown
