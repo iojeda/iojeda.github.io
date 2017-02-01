@@ -2,13 +2,10 @@
 
 Requisitos previos
 
-```markdown
-
 1. Lector de tarjetas inteligentes compatible con Linux
 2. Dni-e en vigor y con certificados actualizados
 3. Autoridades de Certificación del Dni-e
 
-```
 ### 1. Elección del Lector de tarjetas
 
 Hay multiples opciones en este punto, yo os voy a indicar que lector tengo pero cualquier otro con soporte linux os sirve.
@@ -18,7 +15,7 @@ Mi lector: [Woxter-lector-dnie](http://woxter.es/esp/es/perifericos-pc-/79-woxte
 
 Precio: 11,99€
 
-Esta basado en el siguiente controlador del fabricante alcor [Alcor AU9540](http://www.alcormicro.com/en_content/c_product/product_01b.php?CategoryID=4&IndexID=4) (esto me lo chivó linux)
+Esta basado en el siguiente controlador del fabricante Alcor [Alcor AU9540](http://www.alcormicro.com/en_content/c_product/product_01b.php?CategoryID=4&IndexID=4) (esto me lo chivó linux)
 
 ```markdown
 
@@ -81,5 +78,3 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
-{info:title=Useful Information}The useful information.{info}
