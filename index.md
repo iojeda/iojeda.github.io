@@ -15,7 +15,7 @@ Mi lector: [Woxter-lector-dnie](http://woxter.es/esp/es/perifericos-pc-/79-woxte
 
 Precio: 11,99€
 
-Esta basado en el siguiente controlador del fabricante Alcor [Alcor AU9540](http://www.alcormicro.com/en_content/c_product/product_01b.php?CategoryID=4&IndexID=4) (esto me lo chivó Linux :smile:)
+Esta basado en el siguiente controlador del fabricante Alcor [Alcor AU9540](http://www.alcormicro.com/en_content/c_product/product_01b.php?CategoryID=4&IndexID=4) ( esto me lo chivó Linux :smile: )
 
 ```markdown
 
@@ -35,9 +35,14 @@ $
 
 ### 2. Dni-e en vigor y con certificados actualizados
 
-Ademas de comprobar que el Dni-e no este caducado aqui tenemos que tener en cuenta alguna cosilla mas.
-Recordar la clave que indicamos en la creación del Dni-e para validar las gestiones realizadas con el mismo (si, yo tampoco me acordaba :smile:)
+Ademas de comprobar que el Dni-e no este caducado aqui tenemos que tener en cuenta alguna cosilla mas...
+
+Recordar la clave que indicamos en la creación del Dni-e para validar las gestiones realizadas con el mismo ( si, yo tampoco me acordaba :smile: )
+
 Comprobar que los certificados instalados en el chip de la tarjeta estan al día.
+
+Estas labores pueden realizarse en cualquier comisaría de policía donde tengan esta maquina
+![Image](image/PAD.jpg)
 
 ```markdown
 $ sudo pacman -S opensc
