@@ -1,5 +1,10 @@
 ## How to Install Dni-e in Arch Linux easily
 
+First of all you need the following
+```markdown
+- Linux Compatible Smart Card reader
+```
+
 You can use the [editor on GitHub](https://github.com/iojeda/iojeda.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
