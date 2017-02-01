@@ -41,8 +41,7 @@ Recordar la clave que indicamos en la creación del Dni-e para validar las gesti
 
 Comprobar que los certificados instalados en el chip de la tarjeta estan al día.
 
-Estas labores pueden realizarse en cualquier comisaría de policía donde tengan esta maquina
-![Image](image/PAD.jpg)
+Estas labores pueden realizarse en cualquier comisaría de policía donde tengan esta maquina [Punto de Actualizacin del Dnie](https://www.dnielectronico.es/img/PAD.jpg)
 
 ```markdown
 $ sudo pacman -S opensc
