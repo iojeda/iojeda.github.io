@@ -6,7 +6,7 @@ Requisitos previos
 2. Dni-e en vigor y con certificados actualizados
 3. Autoridades de Certificación del Dni-e
 
-### 1. Elección del Lector de tarjetas
+### 1.- Elección del Lector de tarjetas
 
 Hay multiples opciones en este punto, yo os voy a indicar que lector tengo pero cualquier otro con soporte Linux os sirve.
 Tan solo teneis que aseguraros, al leer los datos del embalaje se indica claramente, que entre los sistemas operativos soportados se encuentra Linux.
@@ -33,58 +33,50 @@ $
 
 ```
 
-### 2. Dni-e en vigor y con certificados actualizados
+### 2.- Dni-e en vigor y con certificados actualizados
 
 Ademas de comprobar que el Dni-e no este caducado aqui tenemos que tener en cuenta alguna cosilla mas...
 
-Recordar la clave que indicamos en la creación del Dni-e para validar las gestiones realizadas con el mismo ( si, yo tampoco me acordaba :smile: )
+Modificar la clave que indicamos en la creación del Dni-e para validar las gestiones realizadas con el mismo ( si, yo tampoco me acordaba :smile: )
 
-Comprobar que los certificados instalados en el chip de la tarjeta estan al día.
+Comprobar que los certificados instalados en el chip de la tarjeta estan al día o Renovarlos en su caso.
 
-Estas labores pueden realizarse en cualquier comisaría de policía donde tengan esta maquina [Punto de Actualizacin del Dnie](https://www.dnielectronico.es/img/PAD.jpg)
+Estas labores pueden realizarse en cualquier comisaría de policía donde tengan esta maquina: [Punto de Actualizacin del Dnie](https://www.dnielectronico.es/img/PAD.jpg)
 
+### 3.- Instalar Autoridades de Certificación del Dni-e en el Navegador Web
+
+Hay que descargar los certificados de la pagina oficial de la policía: [Dnie AC Certs](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_077)
+
+En esta pagina se ofrecen tanto el certificado sha-256 como el sha-1 (por motivos de compatibilidad).
+Es desaconsejable instalar los certificados sha-1 ya que los navegadores y otras empresas (entre otros Microsoft) han dejado de confiar en ese tipo de certificados los cuales ya no son admitidos a partir del 01/01/2017
+
+Pueden ampliar información [aqui](https://www.tbs-certificates.co.uk/FAQ/en/microsoft_depreciation_sha1.html)
+
+Una vez han bajado los certificados toca instalarlos en el navegador. Yo utilizo Firefox, asi que os diré como se instala para este navegador.
+
+Vamos a: Preferencias --> Avanzadas --> Ver Certificados --> Autoridades --> Importar
+Entonces elegimos el certificado que nos hemos bajado y listo.
+
+### 4.- Instalar Software y añadir modulo de control en Firefox
+
+Ahora toca lo divertido :smile:
+
+Vamos a instalar el software necesario para el control del lector de tarjetas inteligente,todos los paquetes necesarios estan en los repositorios oficiales por tanto no necesitaremos tirar de [AUR](https://aur.archlinux.org/)
+Los paquetes necesarios son los siguientes:
+
+opensc     --> librerias y herramientas para lectores de tarjetas Inteligentes
+
+ccid       --> driver genérico USB para lectores de tarjetas Inteligentes
+
+pcsc-tools --> Arquitectura PC/SC para tarjetas Inteligentes
+
+### Instalar paquetes
 ```markdown
-$ sudo pacman -S opensc
+$ sudo pacman -S opensc ccid pcsc-tools
 ```
 
-
-
-You can use the [editor on GitHub](https://github.com/iojeda/iojeda.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+### Instalar y arrancar servicio controlador
 ```markdown
-$ sudo pacman -S opensc
+$ sudo systemctl enable pcscd.service
+$ sudo systemctl start pcscd.service
 ```
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/iojeda/iojeda.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
