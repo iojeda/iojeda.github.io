@@ -17,7 +17,7 @@ Tan solo teneis que aseguraros, al leer los datos del embalaje se indica clarame
 
 Esta basado en el siguiente controlador del fabricante Alcor [Alcor AU9540](http://www.alcormicro.com/en_content/c_product/product_01b.php?CategoryID=4&IndexID=4) ( esto me lo chivó Linux :smile: )
 
-```markdown
+```bash
 
 $ lsusb
 Bus 002 Device 002: ID 8087:8000 Intel Corp. 
