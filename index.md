@@ -29,7 +29,6 @@ Bus 003 Device 003: ID 046d:c52f Logitech, Inc. Unifying Receiver
 Bus 003 Device 005: ID 058f:9540 Alcor Micro Corp. AU9540 Smartcard Reader
 Bus 003 Device 002: ID 046d:c326 Logitech, Inc. 
 Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
-$
 
 ```
 
